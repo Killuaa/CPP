@@ -54,6 +54,13 @@ void ketQua(int soMay,int soNguoiNhap)
 
 }
 
+void delay(long long  time)
+{
+  while(time--);
+
+
+}
+
 int main()
 {
   int soNguoiNhap=0;
@@ -68,6 +75,9 @@ int main()
       cin>>soNguoiNhap;
       cout<<"Ban da chon ";check(soNguoiNhap);
       soMay=ramdom();
+      delay(1000000000);cout<<"**";
+
+      cout<<endl;
       cout<<"May chon";check(soMay);
       ketQua(soMay,soNguoiNhap);
 
